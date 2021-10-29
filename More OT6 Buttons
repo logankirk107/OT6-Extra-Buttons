@@ -4,6 +4,8 @@
 // @version      1.0
 // @description  This is to add extra buttons to the side-bar on the OT6 pages, best used while side-bar is extended.
 // @author       Logan Kirk
+// @updateURL    https://raw.githubusercontent.com/logankirk107/OT6-Extra-Buttons/main/More%20OT6%20Buttons
+// @downloadURL  https://raw.githubusercontent.com/logankirk107/OT6-Extra-Buttons/main/More%20OT6%20Buttons
 // @match        https://cxlabs.cisco.com/*
 // @match        https://calo-new.cisco.com/*
 // @icon         https://www.google.com/s2/favicons?domain=cisco.com
@@ -183,5 +185,3 @@ document.getElementById("sidebar").appendChild(input);
     return false;
   }
 
-
-Testing function.
