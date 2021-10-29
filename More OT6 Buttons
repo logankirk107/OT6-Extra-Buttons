@@ -1,0 +1,184 @@
+// ==UserScript==
+// @name         More OT6 Buttons
+// @namespace    https://cxlabs.cisco.com
+// @version      1.0
+// @description  This is to add extra buttons to the side-bar on the OT6 pages, best used while side-bar is extended.
+// @author       Logan Kirk
+// @match        https://cxlabs.cisco.com/*
+// @match        https://calo-new.cisco.com/*
+// @icon         https://www.google.com/s2/favicons?domain=cisco.com
+// @grant        none
+// ==/UserScript==
+
+// Starting Blank to add space between button groups
+(function() {
+var startblank=document.createElement("startblank");
+startblank.style.padding = "40px";
+startblank.style.width = "190px";
+document.getElementById("sidebar").appendChild(startblank);
+
+})();
+
+// Autopod Page link
+var autopod=document.createElement("input");
+autopod.type="button";
+autopod.value= "Autopods Page";
+autopod.onclick = visitPage;
+autopod.style.width = "190px";
+document.getElementById("sidebar").appendChild(autopod);
+
+function visitPage()
+{
+    window.open("https://autopods.cisco.com/all_pods");
+}
+
+// eITMS Page Link
+(function() {
+var eitms=document.createElement("input");
+eitms.type="button";
+eitms.value="eITMS Link";
+eitms.onclick = visitPage;
+eitms.style.width = "190px";
+document.getElementById("sidebar").appendChild(eitms);
+
+function visitPage()
+{
+    window.open("https://wwwin-eitms.cisco.com/eitms/");
+}
+})();
+
+// Blank-1 to add space between button groups
+(function() {
+var blank1=document.createElement("blank1");
+blank1.style.padding = "20px";
+blank1.style.width = "190px";
+document.getElementById("sidebar").appendChild(blank1);
+
+})();
+
+// Hybrid Link Smartsheet Link
+(function() {
+var hybridlink=document.createElement("input");
+hybridlink.type="button";
+hybridlink.value="Hybrid Link Smartsheet";
+hybridlink.onclick = visitPage;
+hybridlink.style.width = "190px";
+document.getElementById("sidebar").appendChild(hybridlink);
+
+function visitPage()
+{
+    window.open("https://app.smartsheet.com/sheets/mxhwJ8qxrjGvH443qhrQmJJq2XR8RGGVMQ4WrVj1?view=grid&filterId=7299844856407940");
+}
+})();
+
+// IP Subnet Smartsheet Link
+(function() {
+var ipsubnetsheet=document.createElement("input");
+ipsubnetsheet.type="button";
+ipsubnetsheet.value="IP Subnet Smartsheet";
+ipsubnetsheet.onclick = visitPage;
+ipsubnetsheet.style.width = "190px";
+document.getElementById("sidebar").appendChild(ipsubnetsheet);
+
+function visitPage()
+{
+    window.open("https://app.smartsheet.com/sheets/f2VfHxPH3q4XX4h84wvVFWq3gFxhvWr7fGXW7jp1?view=grid&filterId=7958830446339972");
+}
+})();
+
+// Autopod Available Devices Smartsheet Link
+(function() {
+var available=document.createElement("input");
+available.type="button";
+available.value="Available Devices Smartsheet";
+available.onclick = visitPage;
+available.style.width = "190px";
+document.getElementById("sidebar").appendChild(available);
+
+function visitPage()
+{
+    window.open("https://app.smartsheet.com/sheets/f2VfHxPH3q4XX4h84wvVFWq3gFxhvWr7fGXW7jp1?view=grid&filterId=7958830446339972");
+}
+})();
+
+// Blank-2 to add space between button groups
+(function() {
+var blank2=document.createElement("blank2");
+blank2.style.padding = "20px";
+blank2.style.width = "190px";
+document.getElementById("sidebar").appendChild(blank2);
+
+})();
+
+// Calo-docs Autopod Introduction Page
+(function() {
+var podsintro=document.createElement("input");
+podsintro.type="button";
+podsintro.value="Autopod Intro Doc";
+podsintro.onclick = visitPage;
+podsintro.style.width = "190px";
+document.getElementById("sidebar").appendChild(podsintro);
+
+function visitPage()
+{
+    window.open("https://calo-docs.cisco.com/doku.php?id=external:autopods:start");
+}
+})();
+
+// Calo-docs Autopod SLA Page
+(function() {
+var podSLA=document.createElement("input");
+podSLA.type="button";
+podSLA.value="Autopod SLA Doc";
+podSLA.onclick = visitPage;
+podSLA.style.width = "190px";
+document.getElementById("sidebar").appendChild(podSLA);
+
+function visitPage()
+{
+    window.open("https://calo-docs.cisco.com/doku.php?id=external:autopods:auto_hybrid_sla");
+}
+})();
+
+// Calo-docs Autopod Automatrix Page
+(function() {
+var podautomatrix=document.createElement("input");
+podautomatrix.type="button";
+podautomatrix.value="Autopod Automatrix Doc";
+podautomatrix.onclick = visitPage;
+podautomatrix.style.width = "190px";
+document.getElementById("sidebar").appendChild(podautomatrix);
+
+function visitPage()
+{
+    window.open("https://calo-docs.cisco.com/doku.php?id=external:autopods:using_automatrix");
+}
+})();
+
+
+// Blank-3 to add space between button groups
+(function() {
+var blank3=document.createElement("blank3");
+blank3.style.padding = "40px";
+blank3.style.width = "190px";
+document.getElementById("sidebar").appendChild(blank3);
+
+})();
+
+// eITMS Lab Audit Direct Link
+var input=document.createElement("input");
+input.type="button";
+input.value="Lab Audit Scan";
+input.style.width = "190px";
+input.onclick = popup;
+document.getElementById("sidebar").appendChild(input);
+
+  function popup(mylink, windowname) {
+      mylink = "https://wwwin-eitms.cisco.com/eitms/check_in_out.htm?requestType=4"
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href;
+    window.open(href, windowname, 'width=750,height=550,scrollbars=yes');
+    return false;
+  }
