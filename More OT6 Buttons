@@ -182,3 +182,6 @@ document.getElementById("sidebar").appendChild(input);
     window.open(href, windowname, 'width=750,height=550,scrollbars=yes');
     return false;
   }
+
+
+Testing function.
