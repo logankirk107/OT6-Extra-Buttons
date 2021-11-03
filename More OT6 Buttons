@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         More OT6 Buttons
 // @namespace    https://cxlabs.cisco.com
-// @version      1.2
+// @version      1.3
 // @description  This is to add extra buttons to the side-bar on the OT6 pages, best used while side-bar is extended.
 // @author       Logan Kirk
 // @downloadURL  https://raw.githubusercontent.com/logankirk107/OT6-Extra-Buttons/main/More%20OT6%20Buttons
@@ -99,7 +99,7 @@ document.getElementById("sidebar").appendChild(available);
 
 function visitPage()
 {
-    window.open("https://app.smartsheet.com/sheets/f2VfHxPH3q4XX4h84wvVFWq3gFxhvWr7fGXW7jp1?view=grid&filterId=7958830446339972");
+    window.open("https://app.smartsheet.com/sheets/Rvq24w2wPMgJQ7RWxC68cQJ26fqG2HHHfwqXjGG1?view=grid");
 }
 })();
 
